@@ -1,11 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-import AboutMars from './Components/AboutMars';
+import { Route, Routes } from "react-router-dom";
+import AboutMars from "./views/AboutMars";
+import Home from "./views/Home";
 
 function App() {
   return (
     <div className="App">
-     <AboutMars/>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/about" element={<AboutMars/>} />
+      </Routes>
+      {/* <Navbar/>
+      <Footer/>
+      {/* <MarsRovers/> */}
+      {/* <AboutMars/> */} 
     </div>
   );
 }
