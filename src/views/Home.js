@@ -1,8 +1,9 @@
 import Footer from "../Components/Footer";
-import Hero from "../Components/Hero";
+// import Hero from "../Components/Hero";
 import Navbar from "../Components/Navbar";
 import React, { useEffect, useState} from "react";
-
+import Header from "../Components/Header"
+import Hero from "../Components/Hero";
 function Home() {
    const API_URL = "https://api.nasa.gov/planetary/apod?api_key=PTiti1HsXfGe1tmV3E2QYgh2U0tDUclhzWqtTB14"
   const [pictureOfTheDay, setpictureOfTheDay] = useState([]);
@@ -16,34 +17,19 @@ function Home() {
 
   return (
     <>
+    <Header/>
       <Navbar />
-      <Hero />
+      <Hero/>
+      <h1>NASA image of the day</h1>
       <div>
-        <h1>Welcome to Stellar Space</h1> 
-        <p>The app aims to do: 
-        <ol>
-            <li>Display image of the day</li>
-            <li>See all the objects near thge earth</li>
-            <li>Visualize the weather on planet Mars</li>
-            <li>Show all Mars Rover Photos</li>
-            <li>Display a map of asteroids within space</li>
-        </ol>
-        </p>
+        <p>{pictureOfTheDay.date}</p>               
       </div>
-
       <div>
-        <h1>{pictureOfTheDay.title}</h1>
-        <p>{pictureOfTheDay.date}</p>
-                
-                
-      </div>
-
-      <div>
-        <p><strong>NASA image of the day</strong></p>
         <img src={pictureOfTheDay.url} alt=""/>
       </div>
 
       <div>
+      <h1>{pictureOfTheDay.title}</h1>
         <p>{pictureOfTheDay.explanation}</p>
       </div>
       <Footer />

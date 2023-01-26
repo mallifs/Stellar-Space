@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from "react";
+import Footer from "../Components/Footer";
+import Header from "../Components/Header"
+import Navbar from "../Components/Navbar";
 
 function ObjectsNearEarth() {
 
@@ -52,6 +55,9 @@ function ObjectsNearEarth() {
  
   
     return (
+        <>
+        <Header/>
+        <Navbar/>
       <div className="near" style={{ display: 'block', width: 700, padding: 30 }}>
          <h1>STELLAR SPACE ACTIVITY</h1>
         <table>
@@ -85,8 +91,10 @@ function ObjectsNearEarth() {
         {customOrbit}
         <p>CUSTOM HAZARD</p>
         {customHazard} */}
-        </table>
+        </table>       
       </div>
+      <Footer/>
+      </>
     );
   }
  export default  ObjectsNearEarth;

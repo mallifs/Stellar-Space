@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
+import Header from "../Components/Header"
 
 
 function AboutMars(props) {
@@ -37,6 +38,7 @@ function AboutMars(props) {
 
   return (
     <>
+    <Header/>
       <Navbar />
 
     
