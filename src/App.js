@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+ import { Route, Routes } from "react-router-dom";
 import AboutMars from "./views/AboutMars";
 import Home from "./views/Home";
 
@@ -12,9 +12,15 @@ function App() {
       {/* <Navbar/>
       <Footer/>
       {/* <MarsRovers/> */}
-      {/* <AboutMars/> */} 
+      {/* <AboutMars/> */}
     </div>
   );
 }
-
 export default App;
+
+
+
+
+
+
+
