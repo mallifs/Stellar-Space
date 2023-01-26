@@ -2,19 +2,20 @@ import React, { useEffect, useState } from "react";
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 
+
 function AboutMars(props) {
-  const [hoursData, setSol_Hours] = useState([]);
+  const [sol_hours, setSol_Hours] = useState([]);
   const [solRequired, setSol_Required] = useState([]);
   const [solChecked, setSol_Checked] = useState([]);
 
   useEffect(
-    // side effect function
     () => {
       fetch(
         "https://api.nasa.gov/insight_weather/?api_key=fzSdG2XbOJj2lUZxdX3IBaW0nzQGpjVRId40l7C1&feedtype=json&ver=1.0"
       )
         .then((r) => r.json())
         .then((data) => {
+          console.log(data);
           const customData = data.validity_checks["1219"];
           const hoursData = data.validity_checks;
 
@@ -37,7 +38,28 @@ function AboutMars(props) {
   return (
     <>
       <Navbar />
-      about
+
+    
+        <h4>ATMOSPHERIC TEMPERATURE</h4>
+        {sol_hours.map(soul => (
+          <p key={soul}>{soul}</p>
+        ))}
+
+      <h4>HORIZONTAL WIND PRESSURE</h4>
+        {sol_hours.map(soul => (
+          <p key={soul}>{soul}</p>
+        ))}
+
+    <h4>ATMOSPHERIC PRESSURE</h4>
+        {sol_hours.map(soul => (
+          <p key={soul}>{soul}</p>
+        ))}
+
+    <h4>WIND DIRECTION</h4>
+        {sol_hours.map(soul => (
+          <p key={soul}>{soul}</p>
+        ))}
+     
       <Footer />
     </>
   );
