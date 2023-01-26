@@ -41,27 +41,30 @@ function AboutMars(props) {
     <Header/>
       <Navbar />
 
-    
-        <h4>ATMOSPHERIC TEMPERATURE</h4>
+     <div className="text-fuchsia-100" >
+        <h4 >ATMOSPHERIC TEMPERATURE</h4>
         {sol_hours.map(soul => (
           <p key={soul}>{soul}</p>
         ))}
-
+      </div>
+      <div>
       <h4>HORIZONTAL WIND PRESSURE</h4>
         {sol_hours.map(soul => (
           <p key={soul}>{soul}</p>
         ))}
-
+      </div>
+      <div>
     <h4>ATMOSPHERIC PRESSURE</h4>
         {sol_hours.map(soul => (
           <p key={soul}>{soul}</p>
         ))}
-
+      </div>
+      <div>
     <h4>WIND DIRECTION</h4>
         {sol_hours.map(soul => (
           <p key={soul}>{soul}</p>
         ))}
-     
+     </div>
       <Footer />
     </>
   );

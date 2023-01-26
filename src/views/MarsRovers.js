@@ -1,6 +1,7 @@
 import React ,{useState, useEffect}from "react";
 import DisplayRoverPhotos from "../Components/DisplayRoverPhotos";
 import Footer from "../Components/Footer";
+import Header from "../Components/Header";
 import Navbar from "../Components/Navbar";
 
 function MarsRovers() {
@@ -22,7 +23,7 @@ function MarsRovers() {
      
     console.log(roverPhotos)
       
-      {roverPhotos.map((roverPhoto, index) => {
+      const eachImage= roverPhotos.map((roverPhoto, index) => {
       return (
         <>
         
@@ -34,9 +35,22 @@ function MarsRovers() {
         </>
       );
     })
+
+    return(
+      <div>
+        <Header/>
+        <Navbar/>
+        {roverPhotos ? (
+          <div>
+          {eachImage}
+          </div>
+        ) : ("LOADING...")}
+        <Footer/>
+      </div>
+    )
   }
       
-  }
+  
 
 
 export default MarsRovers;
