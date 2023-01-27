@@ -24,9 +24,9 @@ function Home() {
       
      
       <div className="container">
-        <h1 className="fs-1" style={{textAlign: "center"}}>NASA image of the day</h1>
+        <h1 className="fs-1">NASA image of the day</h1>
         <div >
-          <h5 style={{textAlign: "center"}}>{pictureOfTheDay.date}</h5>               
+          <h5>{pictureOfTheDay.date}</h5>               
         </div>
         <div>
           <img className="rounded" src={pictureOfTheDay.url} alt="Nasa"/>
@@ -35,7 +35,7 @@ function Home() {
 
         <div>
         <h1>{pictureOfTheDay.title}</h1>
-          <p className="text-align-center col-lg-12">{pictureOfTheDay.explanation}</p>
+          <p className="text-align-center col-lg-10">{pictureOfTheDay.explanation}</p>
         </div>      
       </div>
       

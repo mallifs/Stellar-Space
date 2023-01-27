@@ -3,6 +3,10 @@
 import AboutMars from "./views/AboutMars";
 import Home from "./views/Home";
 import ObjectsNearEarth from "./views/ObjectsNearEarth";
+import MarsRovers from "./views/MarsRovers";
+import Hero from "./Components/Hero";
+import Header from "./Components/Header";
+import Navbar from "./Components/Navbar";
 
 
 
