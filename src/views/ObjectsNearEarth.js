@@ -55,19 +55,19 @@ function ObjectsNearEarth() {
  
   
     return (
-        <>
+        <div className="bg-dark">
         <Header/>
         <Navbar/>
       <div className="near" style={{ display: 'block', width: 700, padding: 30 }}>
          <h1>STELLAR SPACE ACTIVITY</h1>
-        <table>
+        <table className="table">
             <tr>
-                <th>Estimated Kilometer Max</th>
-                <th>NAME</th>
-                <th>CUSTOM APPROACH DATA</th>
-                <th>CUSTOM DISTANCE</th>
-                <th>CUSTOM ORBIT</th>
-                <th>CUSTOM HAZARD</th>
+                <th scope="col">Estimated Kilometer Max</th>
+                <th scope="col">NAME</th>
+                <th scope="col">CUSTOM APPROACH DATA</th>
+                <th scope="col">CUSTOM DISTANCE</th>
+                <th scope="col">CUSTOM ORBIT</th>
+                <th scope="col">CUSTOM HAZARD</th>
             </tr>
             <tr>
                 <td>{customList}</td>
@@ -94,7 +94,7 @@ function ObjectsNearEarth() {
         </table>       
       </div>
       <Footer/>
-      </>
+      </div>
     );
   }
  export default  ObjectsNearEarth;

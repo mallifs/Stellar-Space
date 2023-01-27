@@ -16,24 +16,25 @@ function Home() {
    },[])
 
   return (
-    <>
+    <div className="bg-dark">
     <Header/>
       <Navbar />
-      <Hero/>
-      <h1>NASA image of the day</h1>
-      <div>
-        <p>{pictureOfTheDay.date}</p>               
-      </div>
-      <div>
-        <img src={pictureOfTheDay.url} alt=""/>
-      </div>
+      <div className="container">
+        <h1 className="fs-1">NASA image of the day</h1>
+        <div >
+          <p>{pictureOfTheDay.date}</p>               
+        </div>
+        <div>
+          <img className="rounded" src={pictureOfTheDay.url} alt="Nasa"/>
+        </div>
 
-      <div>
-      <h1>{pictureOfTheDay.title}</h1>
-        <p>{pictureOfTheDay.explanation}</p>
+        <div>
+        <h1>{pictureOfTheDay.title}</h1>
+          <p>{pictureOfTheDay.explanation}</p>
+        </div>      
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 

@@ -15,19 +15,33 @@ function Navbar(){
     function handleLogOut(){
         setUser(null)
     }
-    
+
     return <>
-    <Link to="/">Home</Link>
-    <Link to="/aboutMars">Weather on Mars</Link>
-    <Link to="/objects">Near Earth</Link>
-    <Link to="/rovers">Rover Photos</Link>
-    {user ? (
-        <button onClick={handleLogOut}>Logout</button>)
-        :
-        (<button onClick={handleLogin}>Login</button>
-    )}
+    <ul className="nav nav-pills">
+        <li className="nav-item">
+            <Link className="nav-link" to="/home">Home</Link>
+        </li>
+        <li className="nav-item">
+            <Link className="nav-link" to="/aboutMars">Weather on Mars</Link>
+        </li>
+        <li className="nav-item">
+            <Link className="nav-link" to="/objects">Near Earth</Link>
+        </li>
+        <li className="nav-item">
+            <Link className="nav-link"to="/rovers">Rover Photos</Link>
+        </li>
+        <li className="nav-item">
+            <div className="d-grid gap-2 d-md-flex justify-content-md-end">
+            {user ? (
+            <button className="btn btn-primary me-md-2" onClick={handleLogOut}>Logout</button>)
+            :
+            (<button className="btn btn-primary" onClick={handleLogin}>Login</button>
+            )}
+            </div>
+        </li>
+        </ul>
     </>
 }
-
+ 
 
 export default Navbar

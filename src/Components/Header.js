@@ -11,7 +11,9 @@ function Header() {
         background: '#000',
         color: "#b8c0ff",
         textAlign: "center",
-        marginTop: "0px",
+        marginLeft: "-10px",
+        marginRight: "-8px",
+        marginTop: "-10px",
         marginBottom: "10px",
         padding: "10px"
       }}

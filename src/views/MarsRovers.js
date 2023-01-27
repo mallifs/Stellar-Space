@@ -37,15 +37,18 @@ function MarsRovers() {
     })
 
     return(
-      <div>
+      <div className="bg-dark">
         <Header/>
         <Navbar/>
+
         {roverPhotos ? (
-          <div>
+          <div className="row">
           {eachImage}
           </div>
         ) : ("LOADING...")}
+
         <Footer/>
+
       </div>
     )
   }

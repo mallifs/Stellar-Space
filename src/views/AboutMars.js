@@ -4,6 +4,7 @@ import Navbar from "../Components/Navbar";
 import Header from "../Components/Header"
 
 
+
 function AboutMars(props) {
   const [sol_hours, setSol_Hours] = useState([]);
   const [solRequired, setSol_Required] = useState([]);
@@ -37,36 +38,69 @@ function AboutMars(props) {
   );
 
   return (
-    <>
+    <div className="bg-dark">
     <Header/>
       <Navbar />
 
-     <div className="text-fuchsia-100" >
-        <h4 >ATMOSPHERIC TEMPERATURE</h4>
+     <div style={{
+      display: "flex",
+      justifyContent: "space-between"
+    }} >
+      <div 
+      style={{ 
+        borderRadius: "8px",
+         boxShadow: "0px 0px 8px #ccc",
+        color: "#253b56",
+        margin: "12px 0px",
+        padding: "4px 16px 20px 16px"
+  }}>
+        <h4>ATMOSPHERIC TEMPERATURE</h4>
         {sol_hours.map(soul => (
           <p key={soul}>{soul}</p>
         ))}
       </div>
-      <div>
+      <div 
+      style={{ 
+        borderRadius: "8px",
+         boxShadow: "0px 0px 8px #ccc",
+        color: "#253b56",
+        margin: "12px 0px",
+        padding: "4px 16px 20px 16px"
+  }}>
       <h4>HORIZONTAL WIND PRESSURE</h4>
         {sol_hours.map(soul => (
           <p key={soul}>{soul}</p>
         ))}
       </div>
-      <div>
+      <div 
+      style={{ 
+        borderRadius: "8px",
+         boxShadow: "0px 0px 8px #ccc",
+        color: "#253b56",
+        margin: "12px 0px",
+        padding: "4px 16px 20px 16px"
+  }}>
     <h4>ATMOSPHERIC PRESSURE</h4>
         {sol_hours.map(soul => (
           <p key={soul}>{soul}</p>
         ))}
       </div>
-      <div>
+      <div 
+      style={{ 
+        borderRadius: "8px",
+         boxShadow: "0px 0px 8px #ccc",
+        color: "#253b56",
+        margin: "12px 0px",
+        padding: "4px 16px 20px 16px"
+  }}>
     <h4>WIND DIRECTION</h4>
         {sol_hours.map(soul => (
           <p key={soul}>{soul}</p>
         ))}
+     </div> 
      </div>
       <Footer />
-    </>
+    </div>
   );
 }
 
