@@ -3,8 +3,8 @@ import AboutMars from "./views/AboutMars";
 import Home from "./views/Home";
 // import AsteroidsMap from "./views/AsteroidsMap";
 // import ObjectsNearEarth from "./views/ObjectsNearEarth";
-// import Navbar from "./Components/Navbar";
-// import Footer from "./Components/Footer";
+//  import Navbar from "./Components/Navbar";
+//  import Footer from "./Components/Footer";
 // import MarsRovers from "./views/MarsRovers";
 
 
@@ -19,10 +19,12 @@ function App() {
         
       </Routes>
        {/* <Navbar/>
-      <Footer/>
+       
       { <MarsRovers/> }
       <AboutMars/> 
+      <Footer/>
       <ObjectsNearEarth/> */}
+    
     </div>
   );
 }
