@@ -38,8 +38,7 @@ function MarsRovers() {
 
     return(
       <div className="bg-dark">
-        <Header/>
-        <Navbar/>
+       
         <div className="heading" style={{textAlign : 'center'}}>
         <h1 style={{color: "#b8c0ff"}}>Photos Captured on Mars</h1>
         <p>By the Mars Rovers...</p>
@@ -53,7 +52,7 @@ function MarsRovers() {
           <p>Error,Please Try Again </p>
           </div>)}
 
-        <Footer/>
+      
 
       </div>
     )

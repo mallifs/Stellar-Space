@@ -56,8 +56,7 @@ function ObjectsNearEarth() {
   
     return (
         <div className="bg-dark">
-        <Header/>
-        <Navbar/>
+        
       <div className="near" style={{ display: 'block', width: 700, padding: 30 }}>
          <h1 style={{textAlign: "center" ,color:"#b8c0ff"}}>STELLAR SPACE ACTIVITY</h1>
         <table className="table">
@@ -93,7 +92,7 @@ function ObjectsNearEarth() {
         {customHazard} */}
         </table>       
       </div>
-      <Footer/>
+      
       </div>
     );
   }
