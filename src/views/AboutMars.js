@@ -38,9 +38,8 @@ function AboutMars(props) {
   );
 
   return (
-    <div className="bg-dark">
-    <Header/>
-      <Navbar />
+    <div >
+   
       <h1 style={{textAlign: "center",color: "#b8c0ff"}}>Weather On Planet Mars</h1>
      <div style={{
       display: "flex",
@@ -98,9 +97,10 @@ function AboutMars(props) {
           <p key={soul}>{soul}</p>
         ))}
      </div> 
-     </div>
-      <Footer />
+     </div> 
+     
     </div>
+
   );
 }
 

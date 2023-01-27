@@ -1,5 +1,9 @@
-import React from "react";
+ import React from "react";
 import { Route, Routes } from "react-router-dom";
+ 
+ import {useState}from "react";
+
+ 
 import AboutMars from "./views/AboutMars";
 import Home from "./views/Home";
 
@@ -13,38 +17,44 @@ import ObjectsNearEarth from "./views/ObjectsNearEarth";
 
 import MarsRovers from "./views/MarsRovers";
 import Hero from "./Components/Hero";
+import Header from "./Components/Header";
+import Navbar from "./Components/Navbar";
+
+
 
 
 function App() {
- return (
-   <div className="App">
-     <Routes>
-
-        
+ 
+  
       
+
+ 
+  const[isShowLogin, setIsShowLogin] = useState(false)
+
+  const handleLoginClick = () => {
+    setIsShowLogin((isShowLogin) => !isShowLogin)
+  }
+  return (
+    <div className="App">
+      <Header/>
+      <Navbar handleLoginClick={handleLoginClick}/>
+      {/* <Login isShowLogin={isShowLogin}/> */}
+      <Routes>
+        <Route path="/home" element={<Home/>} />
+        <Route path="/" element={<Hero/>} />
+        <Route path="/aboutMars" element={<AboutMars/>} />
+        <Route path="/objects" element={<ObjectsNearEarth/>} />
+        <Route path="/rovers" element={<MarsRovers/>} />
+      </Routes>
 
    
-       <Route path="/home" element={<Home/>} />
-       <Route path="/" element={<Hero/>} />
-       <Route path="/aboutMars" element={<AboutMars/>} />
-       <Route path="/objects" element={<ObjectsNearEarth/>} />
-       <Route path="/rovers" element={<MarsRovers/>} />
-       
-     </Routes>
-       
-      
-     { <MarsRovers/> }
-     <AboutMars/> 
-     <Footer/>
-
-     
-     <ObjectsNearEarth/>
-   
-
-      
-
-   </div>
- );
+      {/* <Navbar/>
+      <Footer/>
+      {/* <MarsRovers/> */}
+      {/* <AboutMars/> */}
+    </div>
+  );
+ 
 }
 export default App;
 
