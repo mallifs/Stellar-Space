@@ -41,7 +41,7 @@ function AboutMars(props) {
     <div className="bg-dark">
     <Header/>
       <Navbar />
-
+      <h1 style={{textAlign: "center",color: "#b8c0ff"}}>Weather On Planet Mars</h1>
      <div style={{
       display: "flex",
       justifyContent: "space-between"

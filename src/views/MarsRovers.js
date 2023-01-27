@@ -40,12 +40,18 @@ function MarsRovers() {
       <div className="bg-dark">
         <Header/>
         <Navbar/>
-
+        <div className="heading" style={{textAlign : 'center'}}>
+        <h1 style={{color: "#b8c0ff"}}>Photos Captured on Mars</h1>
+        <p>By the Mars Rovers...</p>
+         </div>
         {roverPhotos ? (
           <div className="row">
           {eachImage}
           </div>
-        ) : ("LOADING...")}
+        ) : (<div>
+          <img src="image.png" alt="sad face"/>
+          <p>Error,Please Try Again </p>
+          </div>)}
 
         <Footer/>
 

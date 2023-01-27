@@ -16,10 +16,10 @@ function Hero() {
           <p>At Stellar Space you can:</p>
           <ol>
               <p>View the Nasa image of the day</p>
-              <p>See all the objects near the earth</p>
+              <p>See all objects near the earth</p>
               <p>Visualize the weather on planet Mars</p>
-              <p>View all photos recovered from the Mars Rover</p>
-              <p>View a map of the asteroids within space</p>
+              <p>View all photos recovered from the Mars Rovers</p>
+            
           </ol>
           <p>We hope you enjoy your lil Nasa expedition</p>
           <div>
