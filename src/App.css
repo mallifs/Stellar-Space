@@ -1,6 +1,9 @@
 body{
-    background-color: rgb(116, 117, 198);
+ 
      
+
+    background-color: rgb(116, 154, 198);
+
   }
   table{
     width: 300%;
@@ -8,8 +11,11 @@ body{
     border: 1px solid #000;
   }
   th{
+ 
     background-color:blueviolet;
     font-size: 1.5rem;
+ 
+ 
     height: 70px;
     text-align: left;
     border: 1px solid #000;
@@ -27,6 +33,7 @@ body{
     border-bottom: #000;
   }
   tr:nth-child(even){
+
   background-color:blueviolet ;
   }
   .tableData{
@@ -36,4 +43,5 @@ body{
   .dataTable{
     width: 100%;
     
+ 
   }

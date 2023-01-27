@@ -19,7 +19,7 @@ import MarsRovers from "./views/MarsRovers";
 import Hero from "./Components/Hero";
 import Header from "./Components/Header";
 import Navbar from "./Components/Navbar";
-
+import "./App.js"
 
 
 
