@@ -1,5 +1,6 @@
  import React ,{useState}from "react";
  import { Route, Routes } from "react-router-dom";
+ import AsteroidsMap from "./views/AsteroidsMap";
 import AboutMars from "./views/AboutMars";
 import Home from "./views/Home";
 import ObjectsNearEarth from "./views/ObjectsNearEarth";
@@ -26,6 +27,7 @@ function App() {
         <Route path="/" element={<Hero/>} />
         <Route path="/aboutMars" element={<AboutMars/>} />
         <Route path="/objects" element={<ObjectsNearEarth/>} />
+        <Route path="/asteroids" element={<AsteroidsMap/>} />
         <Route path="/rovers" element={<MarsRovers/>} />
       </Routes>
 

@@ -32,3 +32,18 @@
   .dataTable{
     width: 100%;
   }
+
+  *{
+    margin: 0;
+    padding: 0;
+}
+
+.big{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+.hello{
+    height: 100%;
+    padding-top: 3rem;
+}
