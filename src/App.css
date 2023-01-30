@@ -1,13 +1,12 @@
-body{
-    background-color: rgb(116, 154, 198);
-  }
+
   table{
     width: 300%;
     border-collapse: collapse;
     border: 1px solid #000;
   }
   th{
-    background-color:rgb(43, 61, 226);
+    background-color:bluevi;
+    font-size: 1.5rem;
     height: 70px;
     text-align: left;
     border: 1px solid #000;
@@ -25,5 +24,11 @@ body{
     border-bottom: #000;
   }
   tr:nth-child(even){
-  background-color:rgb(43, 55, 226) ;
+  background-color:blueviolet ;
+  }
+  .tableData{
+    font-size: 1.5rem;
+  }
+  .dataTable{
+    width: 100%;
   }
