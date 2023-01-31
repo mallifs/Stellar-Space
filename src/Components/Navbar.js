@@ -18,6 +18,9 @@ function Navbar({handleLoginClick}){
             <Link className="nav-link" to="/objects">Near Earth</Link>
         </li>
         <li className="nav-item">
+            <Link className="nav-link" to="/asteroids">Aestroids Map</Link>
+        </li>
+        <li className="nav-item">
             <Link className="nav-link"to="/rovers">Rover Photos</Link>
         </li>
         <li className="nav-item">

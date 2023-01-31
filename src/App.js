@@ -1,9 +1,3 @@
- import React from "react";
-import { Route, Routes } from "react-router-dom";
- 
- import {useState}from "react";
-
- 
 import AboutMars from "./views/AboutMars";
 import Home from "./views/Home";
 
@@ -19,7 +13,7 @@ import MarsRovers from "./views/MarsRovers";
 import Hero from "./Components/Hero";
 import Header from "./Components/Header";
 import Navbar from "./Components/Navbar";
-import "./App.js"
+import "./App.css"
 
 
 
@@ -44,6 +38,7 @@ function App() {
         <Route path="/" element={<Hero/>} />
         <Route path="/aboutMars" element={<AboutMars/>} />
         <Route path="/objects" element={<ObjectsNearEarth/>} />
+        <Route path="/asteroids" element={<AsteroidsMap/>} />
         <Route path="/rovers" element={<MarsRovers/>} />
       </Routes>
 
