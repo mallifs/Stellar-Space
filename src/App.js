@@ -1,9 +1,14 @@
- import React ,{useState}from "react";
- import { Route, Routes } from "react-router-dom";
- import AsteroidsMap from "./views/AsteroidsMap";
 import AboutMars from "./views/AboutMars";
 import Home from "./views/Home";
+
+import "./App.css"
+// import AsteroidsMap from "./views/AsteroidsMap";
 import ObjectsNearEarth from "./views/ObjectsNearEarth";
+//  import Navbar from "./Components/Navbar";
+  import Footer from "./Components/Footer";
+// import MarsRovers from "./views/MarsRovers";
+
+
 import MarsRovers from "./views/MarsRovers";
 import Hero from "./Components/Hero";
 import Header from "./Components/Header";
@@ -11,7 +16,13 @@ import Navbar from "./Components/Navbar";
 import "./App.css"
 
 
+
 function App() {
+ 
+  
+      
+
+ 
   const[isShowLogin, setIsShowLogin] = useState(false)
 
   const handleLoginClick = () => {
@@ -38,6 +49,7 @@ function App() {
       {/* <AboutMars/> */}
     </div>
   );
+ 
 }
 export default App;
 

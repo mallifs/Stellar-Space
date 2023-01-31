@@ -5,6 +5,7 @@
     border: 1px solid #000;
   }
   th{
+ 
     background-color:bluevi;
     font-size: 1.5rem;
     height: 70px;
@@ -24,14 +25,19 @@
     border-bottom: #000;
   }
   tr:nth-child(even){
+ 
   background-color:blueviolet ;
   }
   .tableData{
     font-size: 1.5rem;
-  }
+  } 
+
   .dataTable{
     width: 100%;
+    
+ 
   }
+ 
 
   *{
     margin: 0;
@@ -47,3 +53,4 @@
     height: 100%;
     padding-top: 3rem;
 }
+ 
