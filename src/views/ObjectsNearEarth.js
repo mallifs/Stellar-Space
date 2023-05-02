@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Footer from "../Components/Footer";
-import Header from "../Components/Header"
-import Navbar from "../Components/Navbar";
+// import Header from "../Components/Header"
+// import Navbar from "../Components/Navbar";
 
 function ObjectsNearEarth() {
 
     const [nearEarth , setNearEarth] = useState([])
-    const[dataArray,setArray] = useState([])
+    // const[dataArray,setArray] = useState([])
 
         
  
@@ -19,9 +19,7 @@ function ObjectsNearEarth() {
         })
     },[])
      console.log(nearEarth["2015-09-08"])
-    // let customData = [nearEarth["2015-09-07"]]
-    // console.log(customData);
-    //console.log({customData});
+    
     let customList = nearEarth.map((item)=>{
         return (<div className="tableData"> {item.estimated_diameter.kilometers.estimated_diameter_max} </div>)
     })

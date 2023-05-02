@@ -1,6 +1,6 @@
 import React from 'react';
 
-function AsteroidsMap(props) {
+function AsteroidsMap() {
     return (
         <>
         <div className="big">

@@ -1,28 +1,20 @@
 import AboutMars from "./views/AboutMars";
+import React, { useState } from "react";
 import Home from "./views/Home";
-
+import {Routes, Route} from "react-router-dom"
 import "./App.css"
-// import AsteroidsMap from "./views/AsteroidsMap";
+import AsteroidsMap from "./views/AsteroidsMap";
 import ObjectsNearEarth from "./views/ObjectsNearEarth";
-//  import Navbar from "./Components/Navbar";
-  import Footer from "./Components/Footer";
-// import MarsRovers from "./views/MarsRovers";
-
-
 import MarsRovers from "./views/MarsRovers";
 import Hero from "./Components/Hero";
 import Header from "./Components/Header";
 import Navbar from "./Components/Navbar";
+import Login from "./Components/login";
 import "./App.css"
 
 
 
 function App() {
- 
-  
-      
-
- 
   const[isShowLogin, setIsShowLogin] = useState(false)
 
   const handleLoginClick = () => {
@@ -32,7 +24,7 @@ function App() {
     <div className="App">
       <Header/>
       <Navbar handleLoginClick={handleLoginClick}/>
-      {/* <Login isShowLogin={isShowLogin}/> */}
+       
       <Routes>
         <Route path="/home" element={<Home/>} />
         <Route path="/" element={<Hero/>} />
@@ -43,10 +35,7 @@ function App() {
       </Routes>
 
    
-      {/* <Navbar/>
-      <Footer/>
-      {/* <MarsRovers/> */}
-      {/* <AboutMars/> */}
+     
     </div>
   );
  

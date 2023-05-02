@@ -1,8 +1,8 @@
 import React ,{useState, useEffect}from "react";
 import DisplayRoverPhotos from "../Components/DisplayRoverPhotos";
-import Footer from "../Components/Footer";
-import Header from "../Components/Header";
-import Navbar from "../Components/Navbar";
+// import Footer from "../Components/Footer";
+// import Header from "../Components/Header";
+// import Navbar from "../Components/Navbar";
 
 function MarsRovers() {
    

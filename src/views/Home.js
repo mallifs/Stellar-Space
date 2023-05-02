@@ -1,9 +1,9 @@
-import Footer from "../Components/Footer";
+// import Footer from "../Components/Footer";
 // import Hero from "../Components/Hero";
-import Navbar from "../Components/Navbar";
+// import Navbar from "../Components/Navbar";
 import React, { useEffect, useState} from "react";
-import Header from "../Components/Header"
-import Login from "../Components/login";
+// import Header from "../Components/Header"
+// import Login from "../Components/login";
 import "./styles.css"
 
 function Home() {
